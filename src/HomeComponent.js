@@ -118,7 +118,7 @@ let DeleteSubNote = (index) => {
 
   return (
   <div className="flex flex-col h-screen bg-[#282c34] items-center">
-	<CgAirplane size={'177px'}/>
+	<h1 className='text-9xl my-8'>🚀</h1>
 	<div className="text-yellow-400 text-2xl mb-3">
 	<b>JS-Note-Taker</b></div>
 	
