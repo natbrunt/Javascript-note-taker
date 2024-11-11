@@ -9,12 +9,12 @@ function App() {
 const [b, setB] = useState(false);
 const [i, setI] = useState(0);
 const [objs, saveObjs] = useState([
-        {title:"Vacation plans to USA",
-        desc:['a0', 'a1', 'a2']},
-        {title:"Vacation plans to the UK",
-        desc:['b0', 'b1', 'b2']},
-        {title:"Vacation plans to go Skiing in Colorado with my friends",
-        desc:['c0', 'c1', 'c2']}
+        {title:"To do",
+        desc:['Note 1']},
+        {title:"Plans for the weekend",
+        desc:['Note 1']},
+        {title:"1st week of December",
+        desc:['Note 1']}
 ]);
 
 /*Logic for focus title on creation*/

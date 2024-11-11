@@ -132,16 +132,16 @@ let DeleteSubNote = (index) => {
 		  ref={titleRef}
 	          onChange={HandleChange}
 		  value={form.title} name="title" 
-		  className="bg-black text-center mb-1"
+		  className="bg-black text-center mb-1 text-4xl max-w-[24rem]"
 		/> <button><FaCheck size={'22px'}/></button>
 	</form></div>
 	:
-	<div className='mt-1 mb-1'> <b>{form.title}</b> <button 
+	<div className='mt-1 mb-1 text-4xl flex flex-row items-center'> <b>{form.title}</b> <button 
 		  onClick={()=>{setBt(true)}}> 
 		  <FaPenSquare />
 		</button> </div>
 	}
-	<ul className="flex flex-col items-center"> 
+	<ul className="flex flex-col items-center text-xl"> 
 	{bools.map((isEdit, index)=>(
 	  isEdit ? <li key={index} className='flex 
 		  flex-row items-center'> <button
