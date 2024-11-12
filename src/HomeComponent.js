@@ -14,7 +14,7 @@ const[form, setForm] = useState({
 const inputRef = useRef(null);
 
 useEffect(()=>{
-	console.log('primary useEffect')
+	
 	setForm({
 		title: objs[i].title,
 		desc: objs[i].desc
