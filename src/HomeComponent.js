@@ -1,5 +1,4 @@
 import React from 'react'
-import { CgAirplane } from "react-icons/cg";
 import {useState, useEffect, useRef} from 'react';
 import { FaPenSquare } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
@@ -20,6 +19,11 @@ useEffect(()=>{
 		title: objs[i].title,
 		desc: objs[i].desc
 	})
+	let InitializeBools = () => {
+		let len = objs[i].desc.length
+		let boolsAr = new Array(len).fill(false)
+		setBools(boolsAr);
+	}
 	InitializeBools();
 	if (titleRef.current) {
          titleRef.current.focus();
@@ -78,11 +82,7 @@ let HandleEditMode = (e, idx) => {
 	setBools(bools.map((edit,i) => (i ===idx ? !edit : edit)))
 }
 
-let InitializeBools = () => {
-	let len = objs[i].desc.length
-	let boolsAr = new Array(len).fill(false)
-	setBools(boolsAr);
-}
+
 
 let HandleSubmit = (e) => {
 	e.preventDefault()
