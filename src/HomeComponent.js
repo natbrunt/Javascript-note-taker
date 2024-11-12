@@ -29,7 +29,7 @@ useEffect(()=>{
          titleRef.current.focus();
         }
 
-},[i, objs])
+},[i, objs,titleRef])
 
 useEffect(()=> {
 	console.log("secondary useEffect")
