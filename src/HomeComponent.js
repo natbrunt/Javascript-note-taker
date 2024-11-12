@@ -43,7 +43,7 @@ useEffect(()=> {
  if (titleRef.current) {
          titleRef.current.focus();
   }
-},[bt])
+},[bt, titleRef])
 
 let AddItem = () => {
   setForm(ps=>({
